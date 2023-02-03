@@ -1,7 +1,4 @@
-from flask import Flask
+from pywebio.input import *
+from pywebio.output import *
 
-app = Flask(__name__)
-
-@app.Route('/')
-def hello():
-    return '<h1>Hello, World!</h1>'
+name = input("Enter your name:", type=TEXT)
